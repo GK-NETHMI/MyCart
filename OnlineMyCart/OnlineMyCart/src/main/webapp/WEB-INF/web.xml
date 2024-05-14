@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+   
+ 
+ <servlet>
+    	<servlet-name>insertData</servlet-name>
+    	<servlet-class>OnlineMyCart.insertData</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    	<servlet-name>insertData</servlet-name>
+    	<url-pattern>/insertData</url-pattern>
+    </servlet-mapping>
+    <servlet>
+		<servlet-name>updateData</servlet-name>
+		<servlet-class>OnlineMyCart.updateData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>updateData</servlet-name>
+		<url-pattern>/updateData</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>deleteData</servlet-name>
+		<servlet-class>OnlineMyCart.deleteData</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteData</servlet-name>
+		<url-pattern>/deleteData</url-pattern>
+	</servlet-mapping>
+    
+    
+</web-app>
